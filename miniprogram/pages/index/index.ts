@@ -2,7 +2,7 @@ Page({
   data: {
     
   },
-  onLoad: function(options){
+  onLoad: function(){
     
   },
   onReady: function(){
@@ -30,7 +30,7 @@ Page({
 
   },
   //item(index,pagePath,text)
-  onTabItemTap:function(item){
+  onTabItemTap:function(){
 
   }
 });
