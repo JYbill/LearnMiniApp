@@ -1,3 +1,8 @@
 <view>
-
+  <text>你好, 微信小程序</text>
+  <text>---</text>
+  <text>{{ msg }}</text>
+  <view wx:for="{{30}}" wx:key="index">
+    {{item}}
+  </view>
 </view>

@@ -1,36 +1,31 @@
+let app = getApp();
+
 Page({
   data: {
-    
+    nickName: '',
+    msg: 'miniapp'
   },
-  onLoad: function(){
-    
+  onLoad: function (): void {
+    this.setData({
+      msg: '你好小程序'
+    })
   },
-  onReady: function(){
-    
+  onReady: function () {
   },
-  onShow: function(){
-    
-  },
-  onHide: function(){
+  onShow: function () {
+
 
   },
-  onUnload: function(){
+  onHide: function () {
 
   },
-  onPullDownRefresh: function(){
+  onUnload: function () {
 
   },
-  onReachBottom: function(){
-
-  },
-  onShareAppMessage: function(){
-
-  },
-  onPageScroll: function(){
-
-  },
-  //item(index,pagePath,text)
-  onTabItemTap:function(){
-
-  }
+  // onPageScroll({ scrollTop }): void {
+  //   console.log(scrollTop);
+  // },
+  // onTabItemTap(obj): void {
+  //   console.log(obj);
+  // },
 });
