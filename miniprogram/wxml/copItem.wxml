@@ -1,0 +1,8 @@
+<!-- copItem.wxml -->
+<import src="./abc" />
+
+<template name="copItem">
+    <template is="abc"></template>
+    <button>{{btnContent}}</button>
+    <view>{{viewContent}}</view>
+  </template>

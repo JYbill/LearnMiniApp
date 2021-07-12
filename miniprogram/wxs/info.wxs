@@ -1,0 +1,11 @@
+module.exports = {
+  name: 'bill',
+  subNum: function(num1, num2) {
+    return num1 + num2;
+  },
+  formatPrice: function(price, num) {
+    var num = num || 2;
+    var price = parseFloat(price);
+    return price.toFixed(num);
+  }
+}

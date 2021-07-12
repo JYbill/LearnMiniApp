@@ -1,1 +1,4 @@
 /* No CSS */
+@import './icon/weui-icon.wxss';
+@import './style/wxui-app.wxss';
+@import './style/weui-searchbar.wxss';

@@ -1,0 +1,51 @@
+<!--pages/com/com.wxml-->
+<view>
+  <view>组件学习</view>
+
+  <view>button组件</view>
+  <button size="mini" open-type="getUserInfo" bindgetuserinfo="handleUserInfo">按钮</button>
+
+  <view>veiw组件</view>
+  <view class="father" 
+        hover-class="father-hover"
+        hover-stay-time="{{0}}">
+
+    <view class="son"       
+          hover-class="son-hover"
+          hover-stop-propagation
+          hover-stay-time="{{0}}">
+    </view>
+  </view>
+
+  <view>image组件</view>
+  <button bind:tap="handleChooseAblum">选择照片</button>
+  <image wx:if="{{imgPath}}"
+         wx:for="{{10}}"
+         wx:key="index"
+         src="{{ imgPath }}"  
+         mode="aspectFit"  
+         show-menu-by-longpress
+         webp
+         bindload="handleLoad"
+         lazy-load/>
+  <view>input组件:</view>
+  <input type="text" confirm-type="send" 
+         placeholder="请输入文字"
+         always-embed
+         bindfocus="handleFocus"
+         bindblur="handleBlur"
+         bindinput="handleInput"/>
+
+  <view>scroll-view组件: </view>
+  <scroll-view scroll-y class="scroll"
+               scroll-top="{{300}}"
+               scroll-with-animation
+               enable-back-to-top
+               bindscroll="hadnleScroll"
+               >
+    <view wx:for="{{10}}" class="item"
+          wx:key="index">
+      {{item}}
+    </view>
+  </scroll-view>
+</view>

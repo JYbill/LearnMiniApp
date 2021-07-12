@@ -1,0 +1,61 @@
+<!--pages/wxs/wxs.wxml-->
+<wxs src="/wxs/info.wxs" module="info" />
+<view>
+  <view>wxs:学习</view>
+  <view>{{info.name}}</view>
+  <view>{{info.subNum(1, 7)}}</view>
+  <view>
+    {{price ? 
+    info.formatPrice(price) : ''}}
+  </view>
+  
+  <view>事件: </view>
+  <button bind:tap="handleBtnTap">点击</button>
+  <button catch:tap="handleBtnTapC">点击</button>
+  <view class="box"
+        bind:tap="handleTap"
+        bind:touchstart="handleTouchStart"
+        bind:touchend="handleTouchEnd"
+        bind:touchmove="handleTouchMove"
+        bind:longpress="handleLongPress">
+  </view>
+
+  <view class="box" bind:touchend="handleEventTouchEnd"></view>
+
+  <view id="outer" bind:tap="outerTap">
+    <view id="inner" bind:tap="innerTap"></view>
+  </view>
+
+  <view class="continer" bind:tap="handleContinerTap"
+        data-test="test" mark:test="test">
+    <block wx:for="{{categoryArr}}" wx:key="index">
+      <view class="item" 
+            bind:tap="handleItemTap"
+            data-item="{{item}}"
+            mark:item="{{item}}">
+            {{item}}
+      </view>
+    </block>
+  </view>
+
+  <view class="father" 
+  capture-bind:tap="handleCaptureFatherTap"
+  bind:tap="handleBindFatherTap" 
+  >
+    <view class="son" 
+    capture-bind:tap="handleCaptureSonTap"
+    bind:tap="catchBindEvent"
+    ></view>
+  </view>
+</view>
+<!-- 
+  capture-catch:tap="handleCaptureFatherTap"
+  catch:tap="handleCaptureFatherTap"
+  bind:tap="handleBindSonTap"
+
+  capture-catch:tap="handleCaptureSonTap"
+  
+  capture-catch:tap="catchCaptureEvent"
+ -->
+
+

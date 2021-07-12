@@ -1,0 +1,29 @@
+<!-- pages/wxml/wxml.wxml -->
+<view>
+  <view>wxml细节:</view>
+  <view class="{{ isActive ? 'active' : '' }}"
+        bind:tap="hadnleViewTap">
+    哈哈哈
+  </view>
+  <view wx:if="{{false}}">wx:if</view>
+  <view hidden>hidden</view>
+  
+  <block wx:for="{{['海豹突击队第一季', '兔八哥', '蜡笔小新', '海贼王', '全栈开发']}}" 
+  wx:key="test"
+  wx:for-item="element" wx:for-index="currentIndex">
+    <view>{{currentIndex}}: {{element}}</view>
+  </block>
+
+  <view>
+    <view wx:for="{{data}}" wx:key="test">{{index}}: {{item}}</view>
+  </view>
+
+  <view>-------模板:-------</view>
+
+  <!-- test.wxml -->
+  <import src="/wxml/copItem" />
+
+  <template is="copItem" data="{{btnContent: '警告', viewContent: '哈哈哈'}}" />
+  <template is="copItem" data="{{btnContent: '按钮', viewContent: '嘻嘻嘻'}}" />
+  <include src="/wxml/footer" />
+</view>
