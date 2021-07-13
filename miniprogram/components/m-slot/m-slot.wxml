@@ -1,0 +1,8 @@
+<!--components/m-slot/m-slot.wxml-->
+<view>
+  <slot name="header" />
+  <view>我是头部</view>
+  <slot /> <!-- 默认插槽 -->
+  <view>我是底部</view>
+  <slot name="footer" />
+</view>

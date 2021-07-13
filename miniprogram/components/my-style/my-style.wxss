@@ -1,0 +1,6 @@
+/* components/my-style/my-style.wxss */
+.title {
+  background-color: brown;
+  font-size: 40rpx;
+  color: blue;
+}

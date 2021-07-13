@@ -1,0 +1,4 @@
+<!--components/c1/c1.wxml-->
+<view bind:custom="handleE">
+  <slot />
+</view>

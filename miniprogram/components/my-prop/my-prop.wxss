@@ -1,0 +1,6 @@
+/* components/my-prop/my-prop.wxss */
+.my-prop {
+  margin: 10rpx 0;
+  background-color: burlywood;
+}
+

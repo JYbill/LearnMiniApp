@@ -2,5 +2,6 @@
 	"pages": [
 		"pages/index/index"
 	],
-	"sitemapLocation": "sitemap.json"
+	"sitemapLocation": "sitemap.json",
+  "usingComponents": {}
 }

@@ -1,0 +1,13 @@
+.title {
+  color: green;
+}
+.red-text {
+  color: red;
+  background-color: brown;
+}
+
+.blue-text {
+  color: blue;
+  background-color: orange;
+}
+

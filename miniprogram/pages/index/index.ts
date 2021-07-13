@@ -1,36 +1,24 @@
 Page({
   data: {
-    
+    count: 0,
+    isShow: true
   },
-  onLoad: function(){
-    
+  handleE2() {
+    console.log('页面的c2');
   },
-  onReady: function(){
-    
+  handleE1() {
+    console.log('页面的c1');
   },
-  onShow: function(){
-    
+  handleAddCount(): void {
+    console.log(this.selectComponent('#my-sel'));
+    // this.selectComponent('#my-sel').addCount(5);
   },
-  onHide: function(){
-
+  onShow(): void {
+    // console.log('page show');
   },
-  onUnload: function(){
-
-  },
-  onPullDownRefresh: function(){
-
-  },
-  onReachBottom: function(){
-
-  },
-  onShareAppMessage: function(){
-
-  },
-  onPageScroll: function(){
-
-  },
-  //item(index,pagePath,text)
-  onTabItemTap:function(){
-
+  handleShowCpn() {
+    this.setData({
+      isShow: !this.data.isShow
+    })
   }
 });

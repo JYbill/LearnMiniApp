@@ -1,0 +1,5 @@
+<view class="my-cpn">
+  <view>{{title}}</view>
+  <view>我是my-cpn组件内容</view>
+  <cpn1 />
+</view>

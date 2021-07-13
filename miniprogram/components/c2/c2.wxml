@@ -1,0 +1,4 @@
+<!--components/c2/c2.wxml-->
+<view bind:tap="handleC2Tap">
+  <slot />
+</view>

@@ -1,3 +1,29 @@
 <view>
+  <my-cpn />
+  <my-style />
+  <view class="title">我是index.wxml的标题</view>
+  <my-prop title="哈哈哈" my-class="red-text" />
+  <my-prop my-class="blue-text" />
+  <view>组件发射事件:----------------------------------</view>
+  <c1 bind:custom="handleE1">
+    <c2 bind:custom="handleE2">测试内容</c2>
+  </c1>
+  <view>组件事件发送......</view>
+  <view>{{count}}</view>
+  <my-e bind:cpnBtnEvent="handleCpnBtnEvent" />
+  <view>自定义组件练习:</view>
+  <b-tab-bar categoryArr="{{['流行', '新款', '精选']}}" />
+  <view>获取自定义组件对象:-----</view>
+  <my-sel id="my-sel" />
+  <button size="mini" bind:tap="handleAddCount">获取自定义组件对象并修改值</button>
 
+  <view>插槽: ---------------</view>
+  <button size="mini" bind:tap="handleShowCpn">显示/隐藏组件</button>
+  <block wx:if="{{isShow}}">
+    <m-slot>
+      <slider slot="header" />
+      <image src="/assets/home.png" mode="aspectFit" />
+      <text slot="footer">我是text</text>
+    </m-slot>
+  </block>
 </view>

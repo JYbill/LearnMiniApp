@@ -1,0 +1,10 @@
+"use strict";
+Component({
+    methods: {
+        handleC2Tap: function () {
+            console.log('c2组件tag');
+            this.triggerEvent('custom', {}, { bubbles: true, composed: true });
+        }
+    }
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYzIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJjMi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0EsU0FBUyxDQUFDO0lBQ1IsT0FBTyxFQUFFO1FBQ1AsV0FBVztZQUNULE9BQU8sQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDdkIsSUFBSSxDQUFDLFlBQVksQ0FBQyxRQUFRLEVBQUUsRUFBRSxFQUFFLEVBQUUsT0FBTyxFQUFFLElBQUksRUFBRSxRQUFRLEVBQUUsSUFBSSxFQUFDLENBQUMsQ0FBQTtRQUNuRSxDQUFDO0tBQ0Y7Q0FDRixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvL0NvbXBvbmVudCBPYmplY3RcclxuQ29tcG9uZW50KHtcclxuICBtZXRob2RzOiB7XHJcbiAgICBoYW5kbGVDMlRhcCgpIHtcclxuICAgICAgY29uc29sZS5sb2coJ2My57uE5Lu2dGFnJyk7XHJcbiAgICAgIHRoaXMudHJpZ2dlckV2ZW50KCdjdXN0b20nLCB7fSwgeyBidWJibGVzOiB0cnVlLCBjb21wb3NlZDogdHJ1ZX0pXHJcbiAgICB9XHJcbiAgfVxyXG59KTsiXX0=

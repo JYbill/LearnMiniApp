@@ -1,0 +1,10 @@
+<!--components/b-tab-bar/b-tab-bar.wxml-->
+<view class="b-tab-bar">
+  <block wx:for="{{categoryArr}}" wx:key="index">
+    <view class="item {{currentIndex === index ? 'active-item' : ''}}" 
+          bind:tap="handleItemTap" 
+          mark:index="{{index}}">
+          {{item}}
+    </view>
+  </block>
+</view>

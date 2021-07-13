@@ -1,0 +1,2 @@
+<!--components/my-e/my-e.wxml-->
+<button bind:tap="handleBtnTap">+ 1</button>
